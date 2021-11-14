@@ -26,6 +26,9 @@ ul {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -66,6 +69,25 @@ body {
   width: 160px;
   min-height: 40px;
   border-radius: 25px;
+}
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.section-title {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
 }
 /* -----HEADER------ */
 .header {
@@ -120,8 +142,18 @@ body {
 }
 
 /* -----HERO----- */
+.hero-container {
+  display: flex;
+}
+.hero-list {
+  width: 93px;
+}
 .hero-right {
   background-color: var(--second-title-color);
+  flex-grow: 1;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  padding-left: 96px;
 }
 .hero-link {
   font-weight: 600;
@@ -135,55 +167,50 @@ body {
   color: var(--accent-color);
 }
 .hero-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: 20px;
   color: var(--first-text-color);
 }
 .hero-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
+  margin-bottom: 20px;
   color: var(--main-title-color);
 }
 .hero-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  max-width: 400px;
   color: var(--second-text-color);
 }
 
 /* -----ABOUT---- */
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
+.about-container {
+  display: flex;
+}
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
 .about-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: 20px;
   color: var(--third-text-color);
 }
 .about-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
+  margin-bottom: 20px;
   color: var(--second-title-color);
 }
 .about-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  margin-bottom: 20px;
   color: var(--fourth-text-color);
 }
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+  margin-bottom: 40px;
   color: var(--fourth-text-color);
 }
 .about-btn {
@@ -192,24 +219,35 @@ body {
 
 /* ---SERVICES AND PRICES--- */
 .prices {
+  padding-top: 130px;
+  padding-bottom: 130px;
   background-color: var(--fourth-text-color);
 }
 
 .prices-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin-bottom: 20px;
   color: var(--first-text-color);
 }
 .prices-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.27;
-  letter-spacing: 0.05em;
+  margin-bottom: 44px;
   color: var(--main-title-color);
+}
+.prices-wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.prices-list {
+  border: 1px solid #ffffff;
+  width: 50%;
+  padding: 30px 40px;
+}
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 .prices-item-text {
   font-size: 18px;
@@ -219,6 +257,8 @@ body {
 }
 .prices-btn {
   color: var(--first-button-color);
+  display: block;
+  margin: 0 auto;
 }
 /* -----REASONS----- */
 
@@ -238,43 +278,20 @@ body {
   color: var(--third-text-color);
 }
 .reasons-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--third-text-color);
 }
 .reasons-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--third-text-color);
 }
 .reasons-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
   color: var(--fourth-text-color);
 }
 
 /* -----OUR MASTERS----- */
 .masters-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--third-text-color);
 }
 .masters-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--third-text-color);
 }
 .masters-item-title {
@@ -296,11 +313,6 @@ body {
 
 /* -----GALLERY----- */
 .gallery-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: var(--third-text-color);
 }
 
@@ -309,11 +321,6 @@ body {
   background-color: aqua;
 }
 .online-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.27;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 
@@ -322,11 +329,6 @@ body {
   background-color: aqua;
 }
 .contacts-title {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.27;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 .contacts-link {
