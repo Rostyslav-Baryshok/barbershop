@@ -10,22 +10,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <a class="header-logo" href="./"><img src="./images/logo.svg" alt="лого сайта"></a>
-    <nav class="header-navigation">
-      <ul class="header-list list">
-        <li class="header-item"><a href="" class="header-link link">О нас</a></li>
-        <li class="header-item"><a href="" class="header-link link">Услуги и цены</a></li>
-        <li class="header-item"><a href="" class="header-link link">Мастера</a></li>
-        <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
-      </ul>
-    </nav>
-    <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-    <button class="header-btn" type="button">онлайн-запись</button>
+    <div class="container header-container">
+      <nav class="header-navigation">
+        <a class="header-logo" href="./"><img src="./images/logo.svg" alt="лого сайта"></a>
+        <ul class="header-list list">
+          <li class="header-item"><a href="" class="header-link link">О нас</a></li>
+          <li class="header-item"><a href="" class="header-link link">Услуги и цены</a></li>
+          <li class="header-item"><a href="" class="header-link link">Мастера</a></li>
+          <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-connect">
+        <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="header-btn btn" type="button">онлайн-запись</button>
+      </div>
+    </div>
   </header>
   <main>
     <!-- Hero -->
@@ -58,7 +65,7 @@
           то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы
           всегда
           готовы усовершенствовать каждого, кто к нам приходит!</p>
-        <button class="about-btn" type="button">онлайн-запись</button>
+        <button class="about-btn btn" type="button">онлайн-запись</button>
       </div>
     </section>
     <!-- services and prices -->
@@ -101,7 +108,7 @@
           <span class="prices-item-text">от 200 грн.</span>
         </li>
       </ul>
-      <button class="prices-btn" type="button">онлайн-запись</button>
+      <button class="prices-btn btn" type="button">онлайн-запись</button>
     </section>
     <section class="reasons">
       <ul class="reasons-list list">

@@ -10,6 +10,28 @@
   --header-text-color: #ffffff;
   --accent-color: #ff6c00;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -32,10 +54,44 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  border: 1px solid #ff6c00;
+  background-color: transparent;
+  width: 160px;
+  min-height: 40px;
+  border-radius: 25px;
+}
 /* -----HEADER------ */
 .header {
   background-color: var(--second-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-list {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 70px;
+}
+.header-item {
+  margin-right: 40px;
+}
+.header-item:last-child {
+  margin-right: 0px;
 }
 .header-link {
   font-weight: 600;
@@ -43,6 +99,9 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--header-text-color);
+}
+.header-connect {
+  margin-left: auto;
 }
 .header-link:hover,
 .header-link:focus {
@@ -56,13 +115,8 @@ body {
   color: var(--header-text-color);
 }
 .header-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--first-button-color);
+  margin-left: 40px;
 }
 
 /* -----HERO----- */
@@ -133,12 +187,6 @@ body {
   color: var(--fourth-text-color);
 }
 .about-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--second-button-color);
 }
 
@@ -170,12 +218,6 @@ body {
   color: var(--second-text-color);
 }
 .prices-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--first-button-color);
 }
 /* -----REASONS----- */
