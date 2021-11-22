@@ -195,6 +195,9 @@ body {
   margin-bottom: 20px;
   color: var(--first-text-color);
 }
+.hero-pre-title::before {
+  background-color: var(--first-text-color);
+}
 .hero-title {
   margin-bottom: 20px;
   color: var(--main-title-color);
@@ -215,6 +218,7 @@ body {
 .about-list {
   display: flex;
   margin-right: 64px;
+  flex-shrink: 0;
 }
 .about-item:not(:last-child) {
   margin-right: 30px;
@@ -222,6 +226,9 @@ body {
 .about-pre-title {
   margin-bottom: 20px;
   color: var(--third-text-color);
+}
+.auto-pre-title::before {
+  background-color: var(--third-text-color);
 }
 .about-title {
   margin-bottom: 20px;
@@ -244,14 +251,23 @@ body {
 
 /* ---SERVICES AND PRICES--- */
 .prices {
+  background-color: #111319;
+  background-image: url(../images/prices-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 130px;
   padding-bottom: 130px;
-  background-color: var(--fourth-text-color);
+  min-width: 1280px;
+  margin: 0 auto;
 }
 
 .prices-pre-title {
   margin-bottom: 20px;
   color: var(--first-text-color);
+}
+.prices-pre-title::before {
+  background-color: var(--first-text-color);
 }
 .prices-title {
   margin-bottom: 44px;
@@ -305,6 +321,9 @@ body {
 .reasons-pre-title {
   color: var(--third-text-color);
 }
+.reasons-pre-title::before {
+  background-color: var(--third-text-color);
+}
 .reasons-title {
   color: var(--third-text-color);
 }
@@ -319,6 +338,9 @@ body {
 }
 .masters-pre-title {
   margin-bottom: 20px;
+  color: var(--third-text-color);
+}
+.masters-pre-title {
   color: var(--third-text-color);
 }
 .masters-title {
@@ -365,6 +387,9 @@ body {
 .gallery-pre-title {
   margin-bottom: 44px;
   color: var(--third-text-color);
+}
+.gallery-pre-title {
+  background-color: var(--third-text-color);
 }
 .gallery-list {
   display: flex;
