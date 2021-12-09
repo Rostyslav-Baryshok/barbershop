@@ -91,7 +91,7 @@ body {
   content: "";
   width: 63px;
   height: 1px;
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: var(--third-text-color);
   margin-right: 21px;
 }
 .after-title {
@@ -517,18 +517,18 @@ body {
   margin-left: 30px;
   margin-top: 30px;
 }
-/* -----ONLINE----- */
-.online {
-  background-color: var(--second-text-color);
+/* -----MODAL AND CONTACTS----- */
+.contacts-wrapper {
+  background-color: #191c26;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  min-width: 1280px;
+  margin: 0 auto;
 }
 .online-title {
   color: var(--main-title-color);
 }
 
-/* -----CONTACTS----- */
-.contacts-title {
-  background-color: var(--second-text-color);
-}
 .contacts-title {
   color: var(--main-title-color);
 }
