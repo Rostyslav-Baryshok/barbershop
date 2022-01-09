@@ -85,7 +85,7 @@ body {
 }
 .pre-title::before {
   content: "";
-  width: 63px;
+  width: 61px;
   height: 1px;
   background-color: var(--second-color);
   margin-right: 21px;
@@ -228,7 +228,7 @@ body {
   margin-bottom: 20px;
   color: var(--main-shade-two-color);
 }
-.hero-pre-title::before {
+.decorative::before {
   background-color: var(--main-shade-two-color);
 }
 .hero-title {
@@ -305,9 +305,6 @@ body {
 .prices-pre-title {
   margin-bottom: 20px;
   color: var(--main-shade-two-color);
-}
-.prices-pre-title::before {
-  background-color: var(--main-shade-two-color);
 }
 .prices-title {
   margin-bottom: 44px;
@@ -534,17 +531,96 @@ body {
 /* -----MODAL AND CONTACTS----- */
 .contacts-wrapper {
   background-color: #191c26;
+}
+.modal-contacts-wrap {
+  display: flex;
+}
+.online {
   padding-top: 130px;
-  padding-bottom: 130px;
-  min-width: 1280px;
-  margin: 0 auto;
+  width: calc(50% + 15px);
+  padding-right: 40px;
 }
 .online-title {
   color: var(--main-color);
+  margin-bottom: 44px;
 }
 
+.online-input-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.online-input,
+.online-text {
+  width: 270px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+  outline: none;
+  transition: border-color 300ms linear;
+}
+
+.online-input:focus,
+.online-text:focus {
+  border-color: #ffffff;
+}
+
+.online-input:focus::placeholder,
+.online-text:focus::placeholder {
+  color: #ffffff;
+}
+
+.online-text {
+  width: 100%;
+  height: 76px;
+  resize: none;
+  margin-bottom: 44px;
+}
+
+.online-input::placeholder,
+.online-text::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-shade-two-color);
+  transition: color 300ms linear;
+}
+.online-input + .online-input {
+  width: 260px;
+}
+
+.online-btn {
+  color: var(--main-color);
+}
+.contacts {
+  background-image: url(../images/footer-br.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  width: calc(50% + 15px);
+  padding-left: 100px;
+}
 .contacts-title {
   color: var(--main-color);
+  margin-bottom: 40px;
+}
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contacts-item:last-child {
+  margin-bottom: 70px;
 }
 .contacts-link {
   font-style: normal;
@@ -553,6 +629,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-shade-color);
 }
+
 .contacts-bottom-title {
   font-weight: 600;
   font-size: 11px;
@@ -560,6 +637,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .contacts-bottom-text {
   font-size: 18px;

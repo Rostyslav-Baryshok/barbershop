@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div class="hero-right">
-          <p class="hero-pre-title pre-title" lang="en">A hair salon for men in Kyiv</p>
+          <p class="hero-pre-title pre-title decorative" lang="en">A hair salon for men in Kyiv</p>
           <h1 class="hero-title" lang="en">BarberShop</h1>
           <p class="hero-after-title after-title">Мы эксперты в модных мужских стрижках.
             Работаем быстро, осторожно и со вкусом.</p>
@@ -83,7 +83,7 @@
     <!-- services and prices -->
     <section class="prices" id="services">
       <div class="container">
-        <p class="prices-pre-title pre-title">Проведи время в компании лучших мастеров</p>
+        <p class="hdecorative pre-title">Проведи время в компании лучших мастеров</p>
         <h2 class="prices-title section-title">Услуги и цены</h2>
         <div class="prices-wrap">
           <ul class="prices-list prices-list-light  list">
@@ -293,16 +293,28 @@
     </section>
     <!-- modal and contacts -->
     <section class="contacts-wrapper" id="contacts">
-      <div class="container">
-        <h2 class="online-title section-title">Онлайн-запись</h2>
+      <div class="container modal-contacts-wrap">
+        <section class="online">
+          <h2 class="online-title section-title">Онлайн-запись</h2>
+          <form action="#" class="online-form">
+            <div class="online-input-wrap">
+              <input type="text" name="online-name" class="online-input" placeholder="Имя*" required />
+              <input type="tel" name="online-tel" class="online-input" placeholder="Телефон*" required />
+            </div>
+            <textarea name="online-text" class="online-text" placeholder="сообщение"></textarea>
+            <button type="submit" class="btn online-btn">
+              отправить
+            </button>
+          </form>
+        </section>
         <section class="contacts">
-          <h2 class="contacts-title">Контакты</h2>
+          <h2 class="contacts-title section-title">Контакты</h2>
           <address class="contacts-address">
             <ul class="contacts-list list">
               <li class="contacts-item">
                 <a class="contacts-link link" href="https://goo.gl/maps/5Fsen3EQHM8j56xj8" target="_blank"
                   rel="noopener noreferrer">ул. Васильковая,
-                  7А Киев,
+                  7А<br>Киев,
                   08132</a>
               </li>
               <li class="contacts-item">
@@ -313,7 +325,7 @@
               </li>
             </ul>
           </address>
-          <p class="contacts-bottom-title">время работы</p>
+          <p class="contacts-bottom-title pre-title decorative">время работы</p>
           <p class="contacts-bottom-text">Ежедневно с 9:00 до 22:00
           </p>
         </section>
