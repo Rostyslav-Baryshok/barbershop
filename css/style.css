@@ -197,13 +197,25 @@ body {
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  border-style: cover;
+  background-size: cover;
 
   flex-grow: 1;
   padding-top: 272px;
   padding-bottom: 206px;
   padding-left: 96px;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-right {
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../images/hero@2x.jpg);
+  }
+}
+
 .hero-link {
   font-weight: 600;
   font-size: 11px;
@@ -285,6 +297,13 @@ body {
   padding-bottom: 130px;
   min-width: 1280px;
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices-bg@2x.png);
+  }
 }
 
 .prices-pre-title {
