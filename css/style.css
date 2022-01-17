@@ -1,9 +1,13 @@
 :root {
   --accent-color: #ff6c00;
+
   --main-color: #ffffff;
   --main-shade-color: #9da4bd;
+
   --second-color: #303030;
   --second-shade-color: #555555;
+  --secomd-shade-two-color: #f7f7f7;
+
   --main-shade-two-color: rgba(157, 164, 189, 0.6);
 }
 p,
@@ -96,7 +100,7 @@ body {
   letter-spacing: 0.02em;
 }
 .section-title {
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
@@ -232,6 +236,8 @@ body {
   background-color: var(--main-shade-two-color);
 }
 .hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
   margin-bottom: 20px;
   color: var(--main-color);
 }
@@ -361,7 +367,7 @@ body {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
-  text-align: center;
+  margin-top: 20px;
   letter-spacing: 0.05em;
   color: var(--second-color);
   display: flex;
@@ -377,6 +383,9 @@ body {
   color: var(--accent-color);
 }
 .reasons-item-text {
+  max-width: 130px;
+  margin: auto;
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -403,7 +412,7 @@ body {
   width: 170px;
   height: 133px;
   flex-wrap: wrap;
-  background-color: #f7f7f7;
+  background-color: var(--secomd-shade-two-color);
 }
 .reasons-item:nth-child(odd) {
   margin-right: 30px;
@@ -432,7 +441,7 @@ body {
 .masters {
   padding-top: 130px;
   padding-bottom: 130px;
-  background-color: #f7f7f7;
+  background-color: var(--secomd-shade-two-color);
 }
 .masters-pre-title {
   margin-bottom: 20px;
@@ -495,13 +504,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: var(--main-color);
   color: var(--second-color);
   transition: color 250ms linear;
 }
 .masters-social-link:hover,
 .masters-social-link:focus {
-  background-color: #ffffff;
+  background-color: var(--main-color);
   color: var(--accent-color);
 }
 .masters-social-icon {
@@ -570,12 +579,12 @@ body {
 
 .online-input:focus,
 .online-text:focus {
-  border-color: #ffffff;
+  border-color: var(--main-color);
 }
 
 .online-input:focus::placeholder,
 .online-text:focus::placeholder {
-  color: #ffffff;
+  color: var(--main-color);
 }
 
 .online-text {
@@ -636,7 +645,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--main-color);
   margin-bottom: 20px;
 }
 .contacts-bottom-text {
@@ -647,17 +656,42 @@ body {
 }
 
 /* -----FOOTER----- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-copy {
+  margin: 55px 0;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--main-shade-color);
 }
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+.footer-list::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: var(--second-color);
+}
+
 .footer-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--second-color);
+  transition: color 250ms linear;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+.footer-link:not(last-child) {
+  margin-left: 40px;
 }
