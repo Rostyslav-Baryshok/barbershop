@@ -10,6 +10,10 @@
 
   --main-shade-two-color: rgba(157, 164, 189, 0.6);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 p,
 h1,
 h2,
