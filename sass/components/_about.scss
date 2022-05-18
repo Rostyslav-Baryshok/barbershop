@@ -1,0 +1,40 @@
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
+.about__container {
+  display: flex;
+}
+.about__list {
+  display: flex;
+  margin-right: 64px;
+  flex-shrink: 0;
+}
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}
+.about__pre-title {
+  margin-bottom: 20px;
+  color: $second-color;
+}
+.auto__pre-title::before {
+  background-color: $second-color;
+}
+.about__title {
+  margin-bottom: 20px;
+  color: $second-color;
+}
+.about__after-title {
+  margin-bottom: 20px;
+  color: $second-shade-color;
+}
+.about__text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  margin-bottom: 40px;
+  color: $second-shade-color;
+}
+.about__btn {
+  color: $second-color;
+}

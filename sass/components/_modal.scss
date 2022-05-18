@@ -1,0 +1,71 @@
+.modal-contacts-wrap {
+  display: flex;
+}
+.online {
+  padding-top: 130px;
+  width: calc(50% + 15px);
+  padding-right: 40px;
+}
+.online__title {
+  color: $main-color;
+  margin-bottom: 44px;
+}
+
+.online__input-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+
+.online__input,
+.online__text {
+  width: 270px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+  outline: none;
+  transition: border-color 300ms linear;
+  color: $main-color;
+}
+
+.online__input:focus,
+.online__text:focus {
+  border-color: $main-color;
+}
+
+.online__input:focus::placeholder,
+.online__text:focus::placeholder {
+  color: $main-color;
+}
+
+.online__text {
+  width: 100%;
+  height: 76px;
+  resize: none;
+  margin-bottom: 44px;
+}
+
+.online__input::placeholder,
+.online__text::placeholder {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $main-shade-two-color;
+  transition: color 300ms linear;
+}
+.online__input + .online__input {
+  width: 260px;
+}
+
+.online__btn {
+  color: $main-color;
+}

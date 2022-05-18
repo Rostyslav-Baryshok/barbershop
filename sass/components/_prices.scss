@@ -1,0 +1,68 @@
+.prices {
+  background-color: #111319;
+  background-image: url(../images/prices-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  min-width: 1280px;
+  margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .prices {
+    background-image: url(../images/prices-bg@2x.png);
+  }
+}
+
+.prices__title {
+  margin-bottom: 44px;
+  color: $main-color;
+}
+.prices__wrap {
+  display: flex;
+  margin-bottom: 50px;
+}
+.prices__list {
+  width: 50%;
+  padding: 30px 40px;
+}
+.prices__list-light {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices__list-dark {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.prices__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+.prices__item::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.12);
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.prices__item-description {
+  order: -1;
+}
+.prices__item:last-child {
+  margin-bottom: 0;
+}
+.prices__item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $main-shade-color;
+}
+.prices__btn {
+  color: $main-color;
+  display: block;
+  margin: 0 auto;
+}

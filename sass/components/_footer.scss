@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  margin: 55px 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $main-shade-color;
+}
+.footer__list {
+  display: flex;
+  align-items: center;
+}
+.footer__list::before {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background-color: $second-color;
+}
+
+.footer__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $second-color;
+  transition: color 250ms linear;
+}
+.footer__link:hover,
+.footer__link:focus {
+  color: $accent-color;
+}
+.footer__link:not(last-child) {
+  margin-left: 40px;
+}

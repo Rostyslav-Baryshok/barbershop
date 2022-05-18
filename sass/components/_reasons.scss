@@ -1,0 +1,73 @@
+.reasons__count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  margin-top: 20px;
+  letter-spacing: 0.05em;
+  color: $second-color;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.reasons__count::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: $accent-color;
+}
+.reasons__item-text {
+  max-width: 130px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: $second-color;
+}
+.reasons {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.reasons__container {
+  display: flex;
+}
+.reasons__left {
+  display: flex;
+  justify-content: center;
+}
+.reasons__list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.reasons__item {
+  width: 170px;
+  height: 133px;
+  flex-wrap: wrap;
+  background-color: $secomd-shade-two-color;
+}
+.reasons__item:nth-child(odd) {
+  margin-right: 30px;
+}
+.reasons__item:nth-child(even) {
+  margin-top: 30px;
+}
+.reasons__left,
+.reasons__right {
+  width: calc(50% - 30px);
+}
+.reasons__pre-title {
+  color: $second-color;
+}
+.reasons__pre-title::before {
+  background-color: $second-color;
+}
+.reasons__title {
+  color: $second-color;
+}
+.reasons__after-title {
+  color: $second-shade-color;
+}
