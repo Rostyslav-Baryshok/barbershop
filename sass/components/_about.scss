@@ -6,9 +6,11 @@
   display: flex;
 }
 .about__list {
-  display: flex;
-  margin-right: 64px;
-  flex-shrink: 0;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-right: 64px;
+    flex-shrink: 0;
+  }
 }
 .about__item:not(:last-child) {
   margin-right: 30px;
